@@ -1,5 +1,9 @@
 ```mermaid
 graph TD;
+	A --- B
+```
+```mermaid
+graph TD;
 	subgraph app1
 	APP --- SCRAPE
 	APP --- SELFPLAY & SL
