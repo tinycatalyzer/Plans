@@ -1,6 +1,6 @@
 ```mermaid
 graph TD;
-	A --- B
+	A --> B
 ```
 ```mermaid
 graph TD;
