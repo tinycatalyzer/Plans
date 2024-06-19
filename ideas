@@ -1,13 +1,4 @@
-```mermaid
-graph TD;
-	subgraph latent signal analysis
-	Real-time SWIR sensor --- blood biomarker analysis 
-	Real-Time LIDAR --- 3D mapping  
-	Real-Time Audio Latent Signal Analysis ---  
-	Real-Time Pathogen Detector --> water regeneration 
-	# All require some way of associating signals to knowledge graphs 
 
-```
 ```mermaid
 graph TD;
 	subgraph app1
