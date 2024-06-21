@@ -1,33 +1,28 @@
-
 ```mermaid
 graph TD;
-	subgraph app1
-	APP --- SCRAPE
-	APP --- SELFPLAY & SL
+	subgraph APPLIED-TECH-SENSORS
+	SWIR 
+	LIDAR 
+	BIO  
+	AUDIO 
 	end
-	subgraph app2
-	SCRAPE --- WEBCACHE --- TSKG & FKG
-	SELFPLAY & SL --- BKG
+	subgraph LATENT-SIGNALS
+	SWIR --- BLOOD
+	LIDAR --- 3D-MAPPING
+	BIO --- PATHOGENS & CHEMISTRY
+	AUDIO --- WAV-EMOTIONS 
 	end
-	TSKG & FKG & BKG --- KG
-	WEBCACHE & SELFPLAY & SL --- LLM["(LLM)"]
-	KG --- LENS & KGIO["KG I/O"] & AC
-	subgraph net 
-	LLM --- PREDICTIONS & LATENTS
+	subgraph systems
+	WAV-EMOTIONS --- CUSTOMER-INTELLIGENCE
+	PATHOGENS & CHEMISTRY --- WATER-REGENERATION & WATER-FILTRATION 
+	3D-MAPPING --- AUTONOMOUS
+	BLOOD --- PROACTIVE-HEALTH & PERFORMANCE 
 	end
-	LATENTS --- KGIO
-	PREDICTIONS --- KG
-	subgraph GAMKG
-	KG --- ACKG
-	subgraph discovery
-	KGIO --- HAN["(H)AN"]
+	subgraph solutions
+	CUSTOMER-INTELLIGENCE & AUTONOMOUS --- FOOD
+	CUSTOMER-INTELLIGENCE & WATER-REGENERATION --- UPE-R&D
+	PROACTIVE-HEALTH & AUTONOMOUS ---  YOBO'S  
+	PERFORMANCE & AUTONOMOUS & WATER-FILTRATION --- MYKOCHI
 	end
-	subgraph kernel
-	LENS  --> GAM["GAM-CORE"]
-	LENS --- GAM
-	end
-	subgraph autocode
-	ACKG --- AC
-	end
-	end
+	
 ```
