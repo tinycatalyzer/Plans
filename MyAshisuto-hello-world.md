@@ -1,3 +1,4 @@
+# discover latent emotion triggers in sales audio recordings
 ```mermaid
 graph TD;
   subgraph source
@@ -17,6 +18,6 @@ graph TD;
   time-series-analysis --> Annotated-Transcript --> Transcript & Speaker-ID & arousal-annotated-keywords/phrases
   time-series-analysis --> 2D-arousal-time-series-chart --> key-arousal-triggers --> global-max & global-min & global-avg --> Annotated-Transcript
   key-arousal-triggers --> local-maxes & local-mins --> Annotated-Transcript
-  Speaker-ID & arousal-annotated-keywords/phrases --> context-analysis --> Arousal-to-self --> 2D-Graph
+  Speaker-ID & arousal-annotated-keywords/phrases --> context-analysis --> Arousal-to-self --> 2D-Graph --> 3D-time-series --> key-arousal-triggers
 end
 ```
