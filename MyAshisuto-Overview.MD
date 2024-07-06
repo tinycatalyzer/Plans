@@ -2,5 +2,4 @@
 ```mermaid
 graph TD;
   audio --> extractions --> single-loop-analysis
-  end
 ```
