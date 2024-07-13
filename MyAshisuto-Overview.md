@@ -13,6 +13,6 @@ graph TD;
     result-entropy-analysis --> annotated-transcript & summary
     arousal-to-self-analysis --> 2D-graph --> user --> positive-feedback & negative-feedback & other-feedback-reactions
     other-feedback-reactions --> audio
-    positive-feedback & negative-feedback --> result-entropy-analysis
+    positive-feedback & negative-feedback --> result-entropy-analysis & 2D-graph
     end 
 ```
