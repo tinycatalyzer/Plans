@@ -3,10 +3,10 @@
 graph TD;
   user --> audio
   subgraph single-loop-analysis
-    audio --> extractions --> time-series-analysis & arousal-to-self-analysis --> trigger-analysis
+    audio --> extractions --> time-series-analysis & arousal-to-self-analysis --> trigger-anomaly-analysis
     end
   subgraph double-loop-analysis
-    trigger-analysis --> multi-agent-explanation-debate --> grounding-search-API --> result-entropy-analysis --> multi-agent-explanation-debate
+    trigger-anomaly-analysis --> multi-agent-explanation-debate --> grounding-search-API --> result-entropy-analysis --> multi-agent-explanation-debate
     end
   subgraph user-feedback
     annotated-transcript & summary --> user
