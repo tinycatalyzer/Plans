@@ -1,16 +1,15 @@
 # interact, reflect, improve empathy, earn rewards for contribution towards customer-intimacy network exchange  
 ```mermaid
 graph TD;
-  subgraph executives
-    strategy 
-    user & peer --> anomalies 
+  subgraph board
+    set-goals-metrics --> set-strategy
     end
-  subgraph user
-    interact --> emotion-triggers-with-context-analysis --> reflect & share --> earn --> user-wallet
-    reflect --> emotion-triggers-with-context-analysis
+  subgraph executive
+    set-strategy --> implement-marketing-product-strategy --> measure-outcomes --> match & mismatch --> entropy-analysis
+    sales --> measure-outcomes
     end
-  subgraph peer
-    share --> verify --> user & Earn
-    Earn --> peer-wallet
-    end
+  subgraph sales
+    self ---> peer --> self
+    end 
+
 ```
